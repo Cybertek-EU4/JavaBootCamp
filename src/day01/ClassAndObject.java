@@ -32,3 +32,36 @@ public class ClassAndObject {
     }
 
 }
+
+
+
+class Test{
+
+    int a; // 0
+    static int b; // 0
+
+    public static void main(String[] args) {
+
+        Test test1 = new Test();
+        test1.b = 10;
+        test1.a = 100;
+
+        Test test2 = new Test();
+        test2.b = 20;
+        test2.a = 200;
+
+
+        System.out.println(test1.b); // 20
+        System.out.println(test2.b); // 20
+
+        System.out.println(test1.a);
+        System.out.println(test2.a);
+
+
+
+    }
+
+
+
+
+}
