@@ -18,7 +18,7 @@ class Car{
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
-                ", price=" + price +
+                ", price= $" + price +
                 '}';
     }
 
@@ -51,7 +51,11 @@ public class InheritancePractice {
 
     public static void main(String[] args) {
         Toyota toyota = new Toyota("Camry", "White", 15000);
+        Mercedes mercedes = new Mercedes("AMG", "Black", 60000);
+        BMW bmw = new BMW("X7", "Red", 75000);
 
         System.out.println(toyota);
+        System.out.println(mercedes);
+        System.out.println(bmw);
     }
 }
