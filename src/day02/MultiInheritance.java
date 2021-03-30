@@ -12,9 +12,11 @@ interface C extends A, B{
 
 }
 
+class D{
 
+}
 
-public class MultiInheritance  implements A, B, C{
+public class MultiInheritance extends D  implements A, B, C{
 
 
 }
