@@ -107,7 +107,7 @@ final class BMW extends Car implements LuxuryCar, Fly{
     }
 }
 
-public class InheritancePractice {
+public class InheritanceAbstractionPractice {
 
     public static void main(String[] args) {
         Toyota toyota = new Toyota("Camry", "White", 15000);
