@@ -1,7 +1,20 @@
 package day02;
 
+interface Fly{
 
-class Car{
+}
+
+interface LuxuryCar{
+    void massage();
+
+     static void main(String[] args) {
+
+    }
+     void seatHeater();
+    void seatCooler();
+}
+
+abstract class Car {
     public String brand, model, color;
     public double price;
 
@@ -12,7 +25,10 @@ class Car{
         this.price = price;
     }
 
-    @Override
+    public abstract void start();
+
+
+    @Override  // from OBJECT class
     public String toString() {
         return "Car{" +
                 "brand='" + brand + '\'' +
@@ -24,26 +40,70 @@ class Car{
 
 }
 
-class Toyota extends Car{
+final class Toyota extends Car{
 
     public Toyota(String model, String color, double price){
         super("Toyota", model, color, price );
     }
 
+    @Override
+    public void start() {
+        System.out.println("Twist the key");
+    }
+
 }
 
-class Mercedes extends Car{
+final class Mercedes extends Car implements LuxuryCar{
 
     public Mercedes( String model, String color, double price) {
         super("Mercedes", model, color, price);
     }
 
+    @Override
+    public void start() {
+        System.out.println("Push start button");
+    }
+
+    @Override
+    public void massage() {
+
+    }
+
+    @Override
+    public void seatHeater() {
+
+    }
+
+    @Override
+    public void seatCooler() {
+
+    }
 }
 
-class BMW extends Car{
+final class BMW extends Car implements LuxuryCar, Fly{
 
     public BMW( String model, String color, double price) {
         super("BMW", model, color, price);
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Jump Start");
+    }
+
+    @Override
+    public void massage() {
+
+    }
+
+    @Override
+    public void seatHeater() {
+
+    }
+
+    @Override
+    public void seatCooler() {
+
     }
 }
 
