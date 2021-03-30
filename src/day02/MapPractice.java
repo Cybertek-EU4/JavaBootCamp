@@ -1,6 +1,7 @@
 package day02;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 
 public class MapPractice {
 
@@ -13,10 +14,39 @@ public class MapPractice {
         for(int i= 0; i < namesGroup1.length; i++){
             group1.put( namesGroup1[i], salariesGroup1[i]  );
         }
-
-
         System.out.println(group1);
 
+        // iterate maps by keys:
+        for (String each : group1.keySet()) {
+            System.out.println(each);
+        }
+
+        System.out.println("------------------------------------------");
+        // iterate maps by values
+        for (Integer each : group1.values()) {
+            System.out.println(each);
+        }
+
+        System.out.println("-------------------------------------------");
+        // iterate maps by keys & values
+
+           for( Map.Entry<String, Integer> each   : group1.entrySet()  ){
+              // System.out.println(each);
+               System.out.println(each.getKey()  + " : "+each.getValue());
+           }
+
+        System.out.println("---------------------------------------------------------");
+
+           group1.keySet().forEach(  p -> {
+               System.out.println(p);
+           } );
+
+
+        System.out.println("-------------------------------------------------------");
+
+        group1.values().forEach( p -> {
+            System.out.println(p);
+        });
 
 
     }

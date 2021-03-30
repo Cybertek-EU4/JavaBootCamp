@@ -29,5 +29,21 @@ public class CollectionReview {
         System.out.println("q1 = " + q1);
 
 
+        System.out.println("-------------------------------------------");
+
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(1,1,1,2,2,2,2,3,3,3,3,4,4,4,4,5,5,5,5,6,6,6));
+        Iterator<Integer> it = list.iterator();
+
+        while(it.hasNext()){
+            if(it.next() < 4 ){
+                it.remove();
+            }
+        }
+
+        System.out.println(list);
+
+
+
+
     }
 }
