@@ -14,7 +14,7 @@ protected class E{
 
 }
 
-private class F{
+public class G{
 
 }
 
