@@ -40,6 +40,10 @@ Java Boot Camp
 		29. Collections: List, Set, Queue
 		30. Iteable & Iterator
 		31. Maps
+		32.
+		33.
+		34.
+		35.
 
 
 1. primitives:  byte < short < int < long < float < double
