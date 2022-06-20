@@ -22,6 +22,10 @@ public class Primitives {
         boolean r3 =   10 > 9;
 
 
+        System.out.println("Hello world");
+        System.out.println("Hello everyone");
+        System.out.println("todays topic is primitives in Java");
+
 
 
 
