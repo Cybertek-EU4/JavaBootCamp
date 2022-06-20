@@ -93,6 +93,7 @@ final class BMW extends Car implements LuxuryCar, Fly{
 
     @Override
     public void massage() {
+        System.out.println("I love BMW");
 
     }
 
